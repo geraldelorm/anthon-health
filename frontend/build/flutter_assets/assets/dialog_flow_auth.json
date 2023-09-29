@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "anthonscheduleassistant-vcta",
+  "private_key_id": "d2dfcbed2ffdd6f75252f191873646a39d23f1f2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDuo8u1TEnTZt+4\nsd9875fbkH6gZRMbMAvA4q+4/xAq4Xi6SgUJHGOISS0rLUHRj5lKmljmOeo58zg3\nzOf1QmHTR8eQtJTzA4AsiVqbXIB4v8KBFLYA4+QkqdNz1bRsFQmn8Eswc4cceK3p\nl9+U4kjJr9sauCnpMcjifAWpkDsqh8j8wnelAgsVIGHho/JMRUmni7bKRxaPfy/h\nfzZbjgX58KZjX5LVocEi/gOte/48GFF/TQ+8PEsOort+iTpEcd2prtHBNhPo6MFG\ngahIIhRDivZr1bWZCXllNl0RskU66URM3TcNGYLIZgx7XdLE5LCljNjyOz83zJlo\nRjlEQBTXAgMBAAECggEAOldE9/+8lLgzvZ2Ou6Z/g6ghrOjI8P6gAPnqZ9nDhBg3\nQaPS81VDaBArwMCBtM/cdAaj8TT7dEtn1Qx9MNKXw+VqfpAHUhnq/fhedFj694o5\n7QC5NiKApg32qfz27O1/vNTcLO4xe95s9gyxFl7z2Irrj+6yIFaRe/1CDSA7true\npusQIOYSXseIiNV2FedFr7W3Z1XQWB9PQLtbd0ZrDnXBKUpXVoZmYG1HH1LbBUli\nfy17PiXKhPX+6+HNHZDPIGlr0aialxmRWVODcQiHz/NJYxUuSb8ftAqU5TdLahP+\nEWnlHZTd/HIMbv6wgnoeJ++F+92z+pCxSX8TqO8OAQKBgQD3b3LAPzvVvljJxClJ\ntIpj48V5OkFiUORVCu8kJ9kWa4XwIYchjpqfFqXycn7HPHZfTVbVFCABSuI/ncm5\nlAoC292018D5NQen0yWIEPurZU55pdXl1Ix5dAerQQQbSZ8UR3DmR9DNpCzmyUDa\n8F2M4+RjUfAU8StVMLhxNUYQVwKBgQD25mjRL8wZlmfdY9iwyJnkufkxTn4u/SHp\nP+mDUPr6aEfCEHMJLscDxcphn0yvHn7ky+0tyMj30TqnX0AkUHFd1hWv3FEV+lcC\nlnc+iHJbDi9M1VxuKK4PpVibISyzI9JhyUhK5irFi8Kj36Hx9q3L4F95Hn47wGdd\nTKvFDfFPgQKBgQCfH1rqaz/ti0XKK45pyeMdrgL2nRIjSeYtEqUL2VxwYKF39ffT\nCsRA/u2lZyBEvItban8m9JRIgIHTa4OpBp0RjZecjwuYuBO+R7lhMZrHdJTtAkr2\nTKQyDv5Hkb40VjopbnAah6CuPqBpoo9EvUNMMdpUTQNaVGYLmRNkKmBubQKBgQCj\nU035O04fixBQMpGQeFLdLGz8wfjU6px5KM83D+XGqh718F24sFn0U+4J4BAhM+Ir\nRf8yr0TKMn1DZM4Qd6pWsZ0NBYgaKs1OJ+zfz/Ed7Oc7Q1TuhjiGnxFbJXnlUwgD\nqdwJt/KJVWe/cds2LcFQQa/GdnZ43lFCNcrXAt8jgQKBgAbqVxa2bMcpCxlYEzDi\n5cwcIm0yzs42tFPGYmuV2bv9s/xHqLJfA4GtRGHMgcmGtst0iMXwQJi5Md5DhEDs\ntQyL4Bde2aJSa2ueRh2xAbUjCYGZfOkME9o4X+vZG+Am/CMX0G3N/3kVAbs18Y0L\nVDi+KcDGE8nXkyouC+EOcHYQ\n-----END PRIVATE KEY-----\n",
+  "client_email": "anthonscheduleassistant@anthonscheduleassistant-vcta.iam.gserviceaccount.com",
+  "client_id": "112753187568987251412",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/anthonscheduleassistant%40anthonscheduleassistant-vcta.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

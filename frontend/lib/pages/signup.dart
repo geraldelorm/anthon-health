@@ -110,7 +110,7 @@ class _SignUpState extends State<SignUp> {
                   children: [
                     Center(
                         child: Text(
-                      "SignUp",
+                      "Sign Up",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 24.0,

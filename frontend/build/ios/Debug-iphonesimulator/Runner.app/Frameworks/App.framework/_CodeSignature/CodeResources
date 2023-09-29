@@ -24,10 +24,6 @@
 		<data>
 		FWIclBjI1nbKgBPZRXdPLcMRL2s=
 		</data>
-		<key>flutter_assets/assets/df.json</key>
-		<data>
-		GUj3Cj9FSEpPmzQyEAHah4Qfk9w=
-		</data>
 		<key>flutter_assets/assets/dialog_flow_auth.json</key>
 		<data>
 		GUj3Cj9FSEpPmzQyEAHah4Qfk9w=
@@ -74,7 +70,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		4gdooiZQ8FmstDqNOv8KZDSEpMk=
+		VukjpsqLt3Hkj4MEn2AFFCI/ww4=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -117,13 +113,6 @@
 			<key>hash2</key>
 			<data>
 			/09P75jzbh8p5xxAusfp/FOyA4jc/H4U6dmL8vxNryc=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/df.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TWzuxHQzs83T0yMuhzdMSi6dLYjAf7R3ptMXWk3b4BY=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/dialog_flow_auth.json</key>
@@ -207,7 +196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AgHM2VqbIytwyJbWJrlsABV4HxH0VbY3uf14oeSrX1Y=
+			5Uwgh/tZQOI203kcs7sNHHXi26ljhgXAN7PlYiZ0Ckg=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

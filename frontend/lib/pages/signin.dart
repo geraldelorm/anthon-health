@@ -83,7 +83,7 @@ class _SignInState extends State<SignIn> {
                 children: [
                   Center(
                       child: Text(
-                    "SignIn",
+                    "Sign In",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 24.0,
@@ -234,7 +234,7 @@ class _SignInState extends State<SignIn> {
                                                 BorderRadius.circular(10)),
                                         child: Center(
                                             child: Text(
-                                          "SignIn",
+                                          "Sign In",
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 18.0,
