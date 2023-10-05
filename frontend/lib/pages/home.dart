@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:messagingapp/pages/chatpage.dart';
 import 'package:messagingapp/pages/aichatpage.dart';
+import 'package:messagingapp/pages/signin.dart';
 import 'package:messagingapp/service/database.dart';
 import 'package:messagingapp/service/shared_pref.dart';
 
@@ -16,7 +17,7 @@ class _HomeState extends State<Home> {
   bool search = false;
   String? myName, myProfilePic, myUserName, myEmail;
   Stream? chatRoomsStream;
-    late List<Map<String, dynamic>> schedulemessages = [];
+  late List<Map<String, dynamic>> schedulemessages = [];
 
   getthesharedpref() async {
     myName = await SharedPreferenceHelper().getDisplayName();
@@ -30,6 +31,11 @@ class _HomeState extends State<Home> {
     await getthesharedpref();
     chatRoomsStream = await DatabaseMethods().getChatRooms();
     setState(() {});
+  }
+
+  List<Map<String, dynamic>> messages = [];
+  getMessages() {
+    return messages;
   }
 
   Widget ChatRoomList() {
@@ -165,7 +171,23 @@ class _HomeState extends State<Home> {
                               Icons.search,
                               color: Color(0Xffc199cd),
                             )),
-                )
+                ),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => SignIn()));
+                    },
+                    child: search
+                        ? Container()
+                        : Container(
+                            padding: EdgeInsets.all(6),
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 179, 44, 7),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: Icon(
+                              Icons.logout,
+                              color: Color(0Xffc199cd),
+                            )))
               ],
             ),
           ),
@@ -241,7 +263,7 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                ],
+              ],
             ),
           ),
           Container(
@@ -445,3 +467,5 @@ class _ChatRoomListTileState extends State<ChatRoomListTile> {
     );
   }
 }
+
+List<Map<String, dynamic>> messages = [];

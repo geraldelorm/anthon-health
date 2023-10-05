@@ -14,8 +14,6 @@ class _ChatPageState extends State<ScheduleChatPage> {
   late DialogFlowtter dialogFlowtter;
   final TextEditingController _controller = TextEditingController();
 
-  List<Map<String, dynamic>> messages = [];
-
   @override
   void initState() {
     DialogFlowtter.fromFile().then((instance) => dialogFlowtter = instance);
@@ -59,7 +57,7 @@ class _ChatPageState extends State<ScheduleChatPage> {
                   ),
                   Text(
                     "Anthon AI Bot",
-                      style: TextStyle(
+                    style: TextStyle(
                         color: Color(0Xffc199cd),
                         fontSize: 20.0,
                         fontWeight: FontWeight.w500),
@@ -101,7 +99,7 @@ class _ChatPageState extends State<ScheduleChatPage> {
   }
 
 
-sendMessage(String text) async {
+  sendMessage(String text) async {
     if (text.isEmpty) {
       print('Message is empty');
     } else {
