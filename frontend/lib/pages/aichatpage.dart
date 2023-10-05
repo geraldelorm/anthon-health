@@ -13,6 +13,7 @@ class ScheduleChatPage extends StatefulWidget {
 class _ChatPageState extends State<ScheduleChatPage> {
   late DialogFlowtter dialogFlowtter;
   final TextEditingController _controller = TextEditingController();
+  final ScrollController scrollController = ScrollController();
 
   @override
   void initState() {
@@ -37,7 +38,7 @@ class _ChatPageState extends State<ScheduleChatPage> {
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30))),
-                child: MessagesScreen(messages: messages)),
+                child: chatMessage()),
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: Row(
@@ -98,6 +99,48 @@ class _ChatPageState extends State<ScheduleChatPage> {
     );
   }
 
+  Widget chatMessageTile(String message, bool sendByMe) {
+    return Row(
+      mainAxisAlignment:
+          sendByMe ? MainAxisAlignment.end : MainAxisAlignment.start,
+      children: [
+        Flexible(
+            child: Container(
+          padding: EdgeInsets.all(16),
+          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(24),
+                  bottomRight:
+                      sendByMe ? Radius.circular(0) : Radius.circular(24),
+                  topRight: Radius.circular(24),
+                  bottomLeft:
+                      sendByMe ? Radius.circular(24) : Radius.circular(0)),
+              color: sendByMe
+                  ? Color.fromARGB(255, 234, 236, 240)
+                  : Color.fromARGB(255, 211, 228, 243)),
+          child: Text(
+            message,
+            style: TextStyle(
+                color: Colors.black,
+                fontSize: 15.0,
+                fontWeight: FontWeight.w500),
+          ),
+        )),
+      ],
+    );
+  }
+
+  Widget chatMessage() {
+    return ListView.builder(
+        controller: scrollController,
+        padding: EdgeInsets.only(bottom: 200.0, top: 130),
+        itemCount: messages.length,
+        itemBuilder: (context, index) {
+          return chatMessageTile(messages[index]['message'].text.text[0],
+              messages[index]['isUserMessage']);
+        });
+  }
 
   sendMessage(String text) async {
     if (text.isEmpty) {
@@ -114,12 +157,18 @@ class _ChatPageState extends State<ScheduleChatPage> {
         addMessage(response.message!);
       });
     }
+    scrollDown();
   }
 
   addMessage(Message message, [bool isUserMessage = false]) {
     messages.add({'message': message, 'isUserMessage': isUserMessage});
   }
 
+  void scrollDown() {
+    scrollController.animateTo(
+      scrollController.position.maxScrollExtent,
+      duration: Duration(milliseconds: 300),
+      curve: Curves.easeOut,
+    );
+  }
 }
-
-

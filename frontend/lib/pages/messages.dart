@@ -9,10 +9,14 @@ class MessagesScreen extends StatefulWidget {
 }
 
 class _MessagesScreenState extends State<MessagesScreen> {
+  final ScrollController scrollController = ScrollController();
+
   @override
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width;
-    return ListView.separated(
+    return ListView.builder(
+        controller: scrollController,
+        padding: EdgeInsets.only(bottom: 90.0, top: 130),
         itemBuilder: (context, index) {
           return Container(
             margin: EdgeInsets.all(10),
@@ -44,7 +48,19 @@ class _MessagesScreenState extends State<MessagesScreen> {
             ),
           );
         },
-        separatorBuilder: (_, i) => Padding(padding: EdgeInsets.only(top: 10)),
+        // separatorBuilder: (_, i) => Padding(padding: EdgeInsets.only(top: 10)),
         itemCount: widget.messages.length);
   }
+
+  void scrollDown() {
+    scrollController.animateTo(
+      scrollController.position.maxScrollExtent,
+      duration: Duration(milliseconds: 300),
+      curve: Curves.easeOut,
+    );
+  }
+}
+
+void scrollDown() {
+  _MessagesScreenState().scrollDown();
 }
